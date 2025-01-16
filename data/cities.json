@@ -1,0 +1,100 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "PT",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": "73930385"
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
+      },
+      "id": "17806751"
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "DE",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": "98443197"
+    },
+    {
+      "id": "3bb7",
+      "cityName": "Kerimeri",
+      "country": "India",
+      "emoji": "IN",
+      "date": "2025-01-16T12:35:32.256Z",
+      "notes": "TEST",
+      "position": {
+        "lat": "19.4977354114486",
+        "lng": "79.08137122580663"
+      }
+    },
+    {
+      "id": "18ca",
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2025-01-16T12:45:44.580Z",
+      "notes": "TEXTING",
+      "position": {
+        "lat": "39.99909779355783",
+        "lng": "-0.0015617562511027754"
+      }
+    },
+    {
+      "id": "39f0",
+      "cityName": "Bosso",
+      "country": "Nigeria",
+      "emoji": "NG",
+      "date": "2025-01-16T12:46:14.058Z",
+      "notes": "TEXT",
+      "position": {
+        "lat": "9.451771297803315",
+        "lng": "6.454002380096476"
+      }
+    },
+    {
+      "id": "9264",
+      "cityName": "Sbeitla",
+      "country": "Tunisia",
+      "emoji": "TN",
+      "date": "2025-01-16T13:00:38.080Z",
+      "notes": "hvjgkkj,",
+      "position": {
+        "lat": "35.39589605031907",
+        "lng": "9.134908660377109"
+      }
+    },
+    {
+      "id": "9997",
+      "cityName": "Illizi",
+      "country": "Algeria",
+      "emoji": "DZ",
+      "date": "2025-01-16T13:05:48.171Z",
+      "notes": "gggsdgdgdsg",
+      "position": {
+        "lat": "26.869083480157293",
+        "lng": "7.027316383242558"
+      }
+    }
+  ]
+}
