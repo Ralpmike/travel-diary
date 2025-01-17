@@ -11,9 +11,9 @@ import styles from "./Map.module.css";
 import { useNavigate } from "react-router";
 import { useCities } from "../contexts/CitiesContext";
 import { useEffect, useState } from "react";
-import { useGeolocation } from "../hooks/useGeoLocation";
-import Button from "./Button";
-import { useURLPosition } from "../hooks/useURLPosition";
+import { useGeolocation } from "../hooks/useGeoLocation.js";
+import Button from "./Button.jsx";
+import { useURLPosition } from "../hooks/useURLPosition.js";
 
 function Map() {
   const { cities } = useCities();
@@ -52,16 +52,17 @@ function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {cities.map((city) => (
-          <Marker
-            position={[city.position.lat, city.position.lng]}
-            key={city.id}
-          >
-            <Popup>
-              <span>{city.emoji}</span> <span>{city.cityName}</span>
-            </Popup>
-          </Marker>
-        ))}
+        {cities &&
+          cities.map((city) => (
+            <Marker
+              position={[city.position.lat, city.position.lng]}
+              key={city.id}
+            >
+              <Popup>
+                <span>{city.emoji}</span> <span>{city.cityName}</span>
+              </Popup>
+            </Marker>
+          ))}
         <ChangeCenter position={mapPosition} />
         <DetectClick />
       </MapContainer>

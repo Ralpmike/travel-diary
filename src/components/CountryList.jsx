@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import styles from "./CountryList.module.css";
-import Spinner from "./Spinner";
-import Message from "./Message";
-import CountryItem from "./CountryItem";
+import Spinner from "./Spinner.jsx";
+import Message from "./Message.jsx";
+import CountryItem from "./CountryItem.jsx";
 import { useCities } from "../contexts/CitiesContext";
 
 function CountryList() {
@@ -11,7 +11,7 @@ function CountryList() {
     return <Spinner />;
   }
 
-  if (!cities.length) {
+  if (!cities?.length) {
     return (
       <Message
         message={"Add your first city by clicking on a city on the map"}

@@ -5,29 +5,15 @@ import { useEffect, useState } from "react";
 import styles from "./Form.module.css";
 import Button from "./Button";
 import BackButton from "./BackButton";
-import { useURLPosition } from "../hooks/useURLPosition";
+import { useURLPosition } from "../hooks/useURLPosition.js";
 import Message from "./Message";
 import Spinner from "./Spinner";
 import ReactCountryFlag from "react-country-flag";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useCities } from "../contexts/CitiesContext";
+import { useCities } from "../contexts/CitiesContext.jsx";
 import { useNavigate } from "react-router";
-
-function convertToEmoji(countryCode) {
-  const codePoints = countryCode.toUpperCase();
-  console.log("codePoints", codePoints);
-
-  //   .split("")
-  //   .map((char) => {
-  //     const codePoint = 127397 + char.charCodeAt(0);
-  //     console.log(`${char}: ${char.charCodeAt(0)} -> ${codePoint}`);
-  //     return codePoint;
-  //   });
-  // console.log("codePoints", codePoints);
-  // return String.fromCodePoint(...codePoints);
-  return codePoints;
-}
+import convertToEmoji from "../hooks/covertToEmoji";
 
 function Form() {
   const [lat, lng] = useURLPosition();
