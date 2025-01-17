@@ -59,6 +59,42 @@
         "lat": "40.0667766688089",
         "lng": "-0.00036097126194123424"
       }
+    },
+    {
+      "id": "45a5",
+      "cityName": "Saint-Marcel",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2025-01-17T22:56:51.483Z",
+      "notes": "I went to Paris this year",
+      "position": {
+        "lat": "46.6105158548628",
+        "lng": "1.4888837998274387"
+      }
+    },
+    {
+      "id": "fc6d",
+      "cityName": "Alcacer do Sal",
+      "country": "Portugal",
+      "emoji": "PT",
+      "date": "2025-01-17T22:58:53.307Z",
+      "notes": "",
+      "position": {
+        "lat": "38.368625995671565",
+        "lng": "-8.599507583260063"
+      }
+    },
+    {
+      "id": "04c0",
+      "cityName": "Markt Erlbach",
+      "country": "Germany",
+      "emoji": "DE",
+      "date": "2025-01-17T22:59:07.592Z",
+      "notes": "",
+      "position": {
+        "lat": "49.52218700446084",
+        "lng": "10.651705090621084"
+      }
     }
   ]
 }
