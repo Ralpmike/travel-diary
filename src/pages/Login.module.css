@@ -24,3 +24,18 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.btn {
+  background-color: green;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(50, 68, 23);
+  /* color: white; */
+}
