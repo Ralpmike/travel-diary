@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useAuth } from "../contexts/FakeAuthContext";
 import styles from "./User.module.css";
 import { useNavigate } from "react-router";
@@ -20,14 +20,14 @@ function User() {
     navigate("/", { replace: true });
   }
 
-  useEffect(() => {
-    if (!user) navigate("/", { replace: true });
-  }, [user, navigate]);
+  // useEffect(() => {
+  //   if (!user) navigate("/", { replace: true });
+  // }, [user, navigate]);
 
   return (
-    <div className={styles?.user}>
-      <img src={user?.avatar} alt={user?.name} />
-      <span>Welcome, {user?.name}</span>
+    <div className={styles.user}>
+      <img src={user.avatar} alt={user.name} />
+      <span>Welcome, {user.name}</span>
       <button onClick={handleClick}>Logout</button>
     </div>
   );
