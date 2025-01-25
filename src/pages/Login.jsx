@@ -2,26 +2,30 @@ import { useNavigate } from "react-router";
 import PageNav from "../components/PageNav";
 import { useAuth } from "../contexts/FakeAuthContext";
 import styles from "./Login.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 // import { useState } from "react";
 
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("raphmike@gmail.com");
+  const [password, setPassword] = useState("raphmike");
   const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
-    const loginDetails = {
-      email: formData.get("email"),
-      password: formData.get("password"),
-    };
-    if (!loginDetails.email || !loginDetails.password) return;
+    // const formData = new FormData(e.target);
+    // const loginDetails = {
+    //   email: formData.get("email"),
+    //   password: formData.get("password"),
+    // };
+    // if (!loginDetails.email || !loginDetails.password) return;
     // console.log(loginDetails);
     // console.log("isAuthenticated", isAuthenticated);
+    const loginDetails = {
+      email,
+      password,
+    };
     login(loginDetails);
     e.target.reset();
   };
@@ -43,8 +47,8 @@ export default function Login() {
             type="email"
             id="email"
             name="email"
-            // onChange={(e) => setEmail(e.target.value)}
-            // value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
         </div>
 
@@ -54,8 +58,8 @@ export default function Login() {
             type="password"
             id="password"
             name="password"
-            // onChange={(e) => setPassword(e.target.value)}
-            // value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
           />
         </div>
 
